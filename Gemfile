@@ -4,9 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Precompile assets
-group :production do
-  gem 'rails_12factor'
-end
+gem 'rails_12factor', group: :production
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
