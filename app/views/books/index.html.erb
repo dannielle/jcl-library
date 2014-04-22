@@ -1,0 +1,96 @@
+<section id="JCLibrary">
+    <%= image_tag "logo.png" , :class=> "logo" %> 
+    <h1>Chicago JC Lending Library</h1>
+    <p>A resource for all to bring us together and to bring us forward! The goal of the JC Lending library is to build the JC community by <strong>advancing careers through learning and discussion.</strong> The Lending Library should be a reliable place of valuable resources that are <strong>curated</strong> and proven to be helpful.</p>
+    <p>The JC Lending Library is based on donations from you and your peers.</p>
+    <p class="nb">*Note: this is not a record meant to show availability.</p>
+  </section>
+  
+  <section id="catalog">
+    <h1>Catalog</h1>
+    <table class="catalog-sheet">
+      <thead>
+        <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Donator</th>
+        <th>Donation Date</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @books.each do |book| %>
+        <tr>
+          <td><%= book.title %></td>
+          <td><%= book.author %></td>
+          <td><%= book.category %></td>
+          <td><%= book.donator_id %></td>
+          <td><%= book.published %></td>
+          <td><%= link_to 'Show', book %></td>
+          <td><%= link_to 'Edit', edit_book_path(book) %></td>
+          <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <%= link_to 'New Book', new_book_path %> 
+  </section>
+
+  <section id="how-to">
+    <h1>How To</h1>
+    <p>What is the procedure for checking out and checking in books?</p>
+    <p>It is expected that a person donates a book to the library before s/he checks out hir first book. Then, that JC may happily check out and check in books as s/he pleases! :)</p>
+
+    <a href="#donating" class="accordian"><h2>Donating</h2></a>
+    <ol id="donating" class="accordian-content">
+      <li>Glance at the "List of Desired Books" on the left side of the bookshelf</li>
+      <li>Pick one that you would like to contribute! Pro tip: You can ship it directly to the Chicago office</li>
+      <li>Don't forget to expense it! You can expense up to $150 of books to TW. The expense code will be under <span class="nb"TW Core Business > External training or books > External training or books > books </span></li>
+      <li>Bring the book to the bookcase! Feel free to grab the librarian to help you. Write your name as the donator of the book on the left/front inner cover.</li>
+      <li>Gluestick a library pocket onto the right/back inner cover of the book.</li>
+      <li>Pick up the book library card and fill out its details of book title and author. Insert the card into the library pocket.</li>
+      <li>Lovingly place the book into the bookcase! :) And enjoy the entire bookshelf, now available at your finger tips</li>
+    </ol>
+
+    <a href="#checking-out" class="accordian"><h2>Checking Out</h2></a>
+    <ol id="checking-out" class="accordian-content">
+      <li>Find a book you'll enjoy & open it up</li>
+      <li>Find the library card in the pocket placed behind the left cover</li>
+      <li>Take out the card and write your name and the current date on the next row</li>
+      <li>Place the card in the handy dandy index card box (THE HANDY DANDY) at the top so that the most recent checkout is at the top like a stack! FIFO</li>
+      <li>Enjoi your book and read it well, grasshopper!</li>
+    </ol>
+
+    <a href="#checking-in" class="accordian"><h2>Checking In</h2></a>
+    <ol id="checking-in" class="accordian-content">
+      <li> Find the card corresponding to your book in THE HANDY DANDY</li>
+      <li>Mark the return date next to the checkout date</li>
+      <li><span class="nb">*Gently*</span> slide the card back into the book pocket</li>
+      <li>Make peace with the fact that the book is returning home to the JC Lending Libr'’'y</li>
+      <li>Place the book back onto its shelf</li>
+    </ol>
+
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>You are free to contact the current librarian or anyone on the Chicago beach anytime with any question. These questions can be anything, such as:</p>
+    <ul>
+      <li>Is this book available?</li>
+      <li>What books in X category do you recommend?</li>
+      <li>What is your favorite pastry?</li>
+    </ul>
+    <p class="contact-librarian">Contact the Chicago JC librarian <a href="mailto:ddelrosa@thoughtworks.com">here</a></p>
+  </section>
+
+</div>
+</body>
+
+</html>
+
+

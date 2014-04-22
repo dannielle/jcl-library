@@ -1,0 +1,118 @@
+body {
+  background-color: #EEDBA6;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  margin:0;
+}
+
+nav {
+  width: 100%;
+  background-color: #111;
+  color: #FDFDFD;
+  padding:40px 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin:0;
+}
+
+nav li {
+  display: inline;
+  padding: 0px 25px;
+}
+
+a {
+  color: #FDFDFD;
+}
+
+.content{
+  width: 800px;
+  margin: auto;
+}
+
+.logo {
+  width:200px;
+  height:200px;
+  margin-bottom:40px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+section {
+  margin: 75px 0px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.nb {
+  font-style: oblique;
+}
+
+table{
+  border-collapse:collapse;
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+th {
+  padding: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #DECDB1;
+}
+
+tr:nth-child(even) {
+  background-color: #B5A07B;
+}
+
+th {
+  background-color: #090909;
+  color: #FDFDFD;
+}
+
+
+td {
+  font-size: 18px;
+  padding: 8px 0;
+}
+
+ol li {
+  font-size:18px;
+  line-height:200%;
+  text-align: left;
+}
+
+.accordian {
+  color: #000;
+}
+
+.accordian-content {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordian-content:target{
+  height:auto;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.contact-librarian, .contact-librarian a{
+  font-size: 32px;
+  color:#000;
+}
