@@ -1,28 +1,5 @@
-== README
+== CHICAGO JC LIBRARY 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Quick shot at a Chicago JC Library web app which would mostly serve as a catalog/record of books within the library and its donators.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Functionality to track checking in/checking out is discouraged in order to keep the spirit of "physicality" alive.
